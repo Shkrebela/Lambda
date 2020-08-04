@@ -1,0 +1,94 @@
+.main-header {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 1) 100%);
+  padding: 0 15px;
+  position: fixed;
+  width: 100%;
+
+  &__container {
+    @include flex(space-between, center);
+
+    & > div:nth-child(2) {
+      @include flex(center, center);
+      width: 100%;
+    }
+
+    @media (max-width: $media-lg) {
+      @include position-order(2, -1);
+      & > div:nth-child(1) {
+        width: 100%;
+      }
+      & > div:nth-child(2) {
+        width: 33.33%;
+      }
+    }
+  }
+
+  &__box {
+    @include flex(center, center);
+    width: 33.33%;
+  }
+
+  &__menu {
+    @include flex(space-between, center);
+    font: $font-third;
+    color: $text-color--light;
+    max-width: 710px;
+    width: 100%;
+    transition: left .3s ease-in-out;
+
+    @media (max-width: $media-lg) {
+      flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      background-color: #191919;
+    }
+
+    &--active-menu-toggle {
+      left: 0;
+    }
+  }
+
+  &__link {
+    $this: &;
+    @include flex(center, center);
+    font: $font-third;
+    font-size: 1.3rem;
+    color: $text-color--light;
+    white-space: nowrap;
+    padding: 2.5rem 1rem;
+    transition: .3s ease-in-out;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1%;
+      height: 3px;
+      background-color: white;
+      opacity: 0;
+      transition: .3s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        left: 0;
+        width: 100%;
+      }
+
+      @media (max-width: $media-md) {
+        border-bottom: 3px solid transparent;
+      }
+    }
+  }
+
+  &__social-block {
+    width: 20%;
+  }
+}

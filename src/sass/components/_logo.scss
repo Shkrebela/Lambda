@@ -1,0 +1,15 @@
+.logo {
+  @include flex(center, center);
+  padding: 15px;
+  width: 157px;
+  height: 100px;
+
+  &__img {
+    display: block;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

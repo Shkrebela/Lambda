@@ -1,0 +1,37 @@
+//fonts
+$font-family--primary: 'Lato', sans-serif;
+$font-family--secondary: 'Yeseva One', cursive;
+$font-family--third: 'Gentium Book Basic', serif;
+$font-family--fourth: 'Open Sans', sans-serif;
+$font-size-base: 16px;
+
+$font-primary: 400 $font-size-base $font-family--primary;
+$font-secondary: 400 $font-size-base $font-family--secondary;
+$font-third: 700 $font-size-base $font-family--third;
+$font-fourth: 400 $font-size-base $font-family--fourth;
+
+//media points
+$media-sm: 540px;
+$media-md: 720px;
+$media-lg: 960px;
+$media-xl: 1400px;
+
+//color
+$primary-color: #cc9900;
+$primary-color--tone-1: #c89f2d;
+$primary-color--hover: lighten(#cc9900, 5%);
+$text-color--light: #ffff;
+$text-color--dark: #4c4c4c;
+
+%color-bg--tone-1 {
+  box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+  background-image: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+}
+%color-bg--tone-2{
+  box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+  background-image: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+}
+
+
+
+

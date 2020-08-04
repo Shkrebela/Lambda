@@ -1,0 +1,23 @@
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_mixin.scss';
+
+@import 'base/_reset.scss';
+@import 'base/_typography.scss';
+
+@import 'vendors/_swiper.scss';
+
+//@import 'components/';
+@import 'components/_buttons.scss';
+@import 'components/_contanir-saction.scss';
+//@import 'components/';
+@import 'components/_input.scss';
+@import 'components/_logo.scss';
+//@import 'components/';
+@import 'components/_separator.scss';
+//@import 'components/;
+@import 'components/_social-block.scss';
+//@import 'components/;
+
+@import 'layout/_header.scss';
+//@import 'layout/_footer.scss';
+@import 'layout/sections/_primary.scss';

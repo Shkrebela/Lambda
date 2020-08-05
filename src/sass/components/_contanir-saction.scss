@@ -7,9 +7,11 @@
 $main-side-padding: 15px;
 
 .section {
-  padding: 140px $main-side-padding 100px;
-  @include media(padding-top, 120px, 100px, 80px, 70px);
-  @include media(padding-bottom, 120px, 100px, 80px, 70px);
+  padding: 70px $main-side-padding;
+  @media (max-width: $media-sm) {
+    padding: 40px $main-side-padding;
+  }
+  //@include media(padding, 70px, 60px, 50px, 40px);
 }
   //@media (max-width: $media-sm) {
   //  padding-top: 50px

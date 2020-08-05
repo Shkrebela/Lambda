@@ -1,7 +1,9 @@
 .primary {
-  background-image: url("./../../../img/background/bg-primary.jpg");
   background-size: cover;
+  background: url("./../../../img/background/bg-primary.jpg") fixed;
+  padding: 140px 15px 140px;
   @include media(padding-top, 140px, 130px, 120px, 110px);
+  @include media(padding-bottom, 100px, 90px, 80px, 70px);
 
   &__container {
     text-align: center;

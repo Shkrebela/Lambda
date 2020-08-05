@@ -4,6 +4,7 @@
   padding: 0 15px;
   position: fixed;
   width: 100%;
+  z-index: 100;
 
   &__container {
     @include flex(space-around, center);

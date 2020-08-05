@@ -3,6 +3,10 @@
   height: 40px;
   margin-bottom: 35px;
   fill: transparentize(white, 0.3);
+
+  &--primary-color {
+    fill: transparentize($primary-color, 0.3);
+  }
   //@media (max-width: $media-PC1) {
   //  margin-bottom: 45px;
   //}

@@ -11,12 +11,16 @@ body {
 
 p, span {
   color: $text-color--dark;
+  margin-bottom: rem(15px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--secondary;
+  font-weight: 400;
 }
 
 h2 {
-  font-family: $font-family--secondary;
   font-size: rem(90px);
-  font-weight: 400;
   @include media(font-size, rem(80px), rem(80px), rem(70px), rem(60px))
 }
 

@@ -4,7 +4,9 @@ $font-family--secondary: 'Yeseva One', cursive;
 $font-family--third: 'Gentium Book Basic', serif;
 $font-family--fourth: 'Open Sans', sans-serif;
 $font-size-base: 16px;
-
+@function rem($size) {
+  @return $size / $font-size-base * 1rem;
+}
 $font-primary: 400 $font-size-base $font-family--primary;
 $font-secondary: 400 $font-size-base $font-family--secondary;
 $font-third: 700 $font-size-base $font-family--third;

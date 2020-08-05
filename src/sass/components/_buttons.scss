@@ -57,69 +57,33 @@
     }
   }
 }
-//
-//.button {
-//  @include flex(center, center);
-//  max-width: 225px;
-//  width: 100%;
-//  min-height: 56px;
-//  border: 1px solid $primary-color;
-//  border-radius: 3px;
-//  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
-//  margin: 0 15px 15px;
-//  font: $font-first;
-//  text-transform: uppercase;
-//  font-weight: 700;
-//  color: $snow-white-color;
-//  background-color: $primary-color;
-//  cursor: pointer;
-//  transition: .3s ease-in-out;
-//
-//  &:hover {
-//    background-color: $primary-hover-color;
-//    border: 1px solid $primary-hover-color;
-//  }
-//
-//  &--indent-right {
-//    margin: 0 15px 15px 0;
-//  }
-//
-//  &--indent-auto {
-//    margin: 0 auto;
-//  }
-//
-//  &--indent-two-button {
-//    margin: 0 15px;
-//  }
-//
-//  &--grey {
-//    background-color: $text-dark-color;
-//    border: 1px solid $text-dark-color;
-//  }
-//
-//  &--transparent {
-//    background-color: transparent;
-//    color: $white-color;
-//    border: 1px solid $white-color;
-//  }
-//
-//  &--adaptive {
-//    max-width: 16em;
-//    min-height: 4em;
-//    margin: 0 15px 15px;
-//    font-size: 1rem;
-//    @media (max-width: $media-tablet) {
-//      max-width: 12em;
-//      min-height: 3em;
-//      font-size: 0.857rem;
-//    }
-//    @media (max-width: $media-PC1) {
-//      max-width: 14em;
-//      min-height: 4em;
-//      font-size: 0.857rem;
-//    }
-//  }
-//}
+
+.button {
+  @include flex(center, center);
+  width: rem(228px);
+  height: 57px;
+  border: 1px solid white;
+  margin: 0 15px 15px;
+  border-radius: 3px;
+  background-color: transparentize(white, 0.7);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+  font-size: 1.12rem;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background-color: transparentize(black, 0.3);
+    border: 1px solid transparentize(black, 0.3);
+  }
+
+  //&--transparent {
+  //  background-color: transparent;
+  //  color: $white-color;
+  //  border: 1px solid $white-color;
+  //}
+}
 //
 //.arrow-down {
 //  @include flex(center, center);

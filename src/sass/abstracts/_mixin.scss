@@ -10,13 +10,17 @@
   }
 }
 
-//@mixin media($v1, $v2, $v3, $v4) {
-//  @media (max-width: $media-sm) {
-//  }
-//  @media (min-width: $media-md) {
-//  }
-//  @media (max-width: $media-lg) {
-//  }
-//  @media (max-width: $media-xl) {
-//  }
-//}
+@mixin media($parameter, $value-1, $value-2, $value-3, $value-4) {
+  @media (max-width: $media-xl) {
+    #{$parameter}: $value-1
+  }
+  @media (max-width: $media-lg) {
+    #{$parameter}: $value-2
+  }
+  @media (max-width: $media-md) {
+    #{$parameter}: $value-3
+  }
+  @media (max-width: $media-sm) {
+    #{$parameter}: $value-4
+  }
+}

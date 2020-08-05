@@ -6,27 +6,26 @@
   width: 100%;
 
   &__container {
-    @include flex(space-between, center);
+    @include flex(space-around, center);
+  }
 
-    & > div:nth-child(2) {
-      @include flex(center, center);
-      width: 100%;
-    }
-
+  &__logo-box {
+    width: 33%;
     @media (max-width: $media-lg) {
-      @include position-order(2, -1);
-      & > div:nth-child(1) {
-        width: 100%;
-      }
-      & > div:nth-child(2) {
-        width: 33.33%;
-      }
+      width: 100%;
     }
   }
 
-  &__box {
-    @include flex(center, center);
-    width: 33.33%;
+  &__menu-box {
+    width: 100%;
+    @media (max-width: $media-lg) {
+      order: -1;
+      width: 33%;
+    }
+  }
+
+  &__social-box {
+    width: 30%;
   }
 
   &__menu {
@@ -53,7 +52,6 @@
   }
 
   &__link {
-    $this: &;
     @include flex(center, center);
     font: $font-third;
     font-size: 1.3rem;
@@ -86,9 +84,5 @@
         border-bottom: 3px solid transparent;
       }
     }
-  }
-
-  &__social-block {
-    width: 20%;
   }
 }

@@ -1,11 +1,11 @@
 html,
 body {
   font: $font-primary;
-  @media (max-width: $media-md) {
-    font-size: 12px;
-  }
   @media (max-width: $media-xl) {
     font-size: 14px;
+  }
+  @media (max-width: $media-md) {
+    font-size: 12px;
   }
 }
 
@@ -13,14 +13,17 @@ p, span {
   color: $text-color--dark;
 }
 
-h1 {
-  font-size: 5.5rem;
-}
-
 h2 {
-  font-size: 2.25rem;
+  font-family: $font-family--secondary;
+  font-size: rem(90px);
+  font-weight: 400;
+  @include media(font-size, rem(80px), rem(80px), rem(70px), rem(60px))
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: rem(36px);
+}
+
+h4 {
+  font-size: rem(21px);
 }

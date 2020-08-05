@@ -7,8 +7,22 @@
 $main-side-padding: 15px;
 
 .section {
-  padding: 140px $main-side-padding;
-
+  padding: 140px $main-side-padding 100px;
+  @include media(padding-top, 120px, 100px, 80px, 70px);
+  @include media(padding-bottom, 120px, 100px, 80px, 70px);
+}
+  //@media (max-width: $media-sm) {
+  //  padding-top: 50px
+  //}
+  //@media (min-width: $media-md) {
+  //  padding-top: 70px
+  //}
+  //@media (max-width: $media-lg) {
+  //  padding-top: 80px
+  //}
+  //@media (max-width: $media-xl) {
+  //  padding-top: 100px
+  //}
   //&--side-non {
   //  padding: 140px 0 0;
   //}
@@ -25,4 +39,3 @@ $main-side-padding: 15px;
   //    padding: 70px 0 0;
   //  }
   //}
-}

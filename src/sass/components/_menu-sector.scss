@@ -1,0 +1,12 @@
+.menu-sector {
+  max-width: 500px;
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+
+  &__title {
+    color: $primary-color;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+}

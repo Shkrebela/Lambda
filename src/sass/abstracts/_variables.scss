@@ -7,6 +7,9 @@ $font-size-base: 16px;
 @function rem($size) {
   @return $size / $font-size-base * 1rem;
 }
+@function em($size, $font-size) {
+  @return $size / $font-size * 1em;
+}
 $font-primary: 400 $font-size-base $font-family--primary;
 $font-secondary: 400 $font-size-base $font-family--secondary;
 $font-third: 700 $font-size-base $font-family--third;
@@ -20,8 +23,8 @@ $media-xl: 1400px;
 
 //color
 $primary-color: #cc9900;
-$primary-color--tone-1: #c89f2d;
-$primary-color--hover: lighten(#cc9900, 5%);
+$menu-color: #c89f2d;
+$primary-color--hover: transparentize($primary-color, 0.4);
 $text-color--light: #ffff;
 $text-color--dark: #4c4c4c;
 

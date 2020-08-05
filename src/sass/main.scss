@@ -13,17 +13,23 @@
 //@import 'components/';
 @import 'components/_input.scss';
 @import 'components/_logo.scss';
-//@import 'components/';
-@import 'components/divider';
+@import 'components/_form.scss';
+@import 'components/_icon-cards-block.scss';
+@import 'components/_divider.scss';
+@import 'components/_dish.scss';
 //@import 'components/;
+@import 'components/_menu-sector.scss';
 @import 'components/_social-block.scss';
 //@import 'components/;
 
 @import 'layout/_header.scss';
-//@import 'layout/_footer.scss';
+@import 'layout/_footer.scss';
 
 //@import 'layout/sections/';
+@import 'layout/sections/_ingredients.scss';
 @import 'layout/sections/_introduction.scss';
-//@import 'layout/sections/';
+@import 'layout/sections/_menu.scss';
+@import 'layout/sections/_reservations.scss';
 @import 'layout/sections/_primary.scss';
+@import 'layout/sections/_reviews.scss';
 //@import 'layout/sections/';

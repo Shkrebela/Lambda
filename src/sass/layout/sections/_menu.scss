@@ -1,0 +1,33 @@
+.menu {
+  box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
+  background-image: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../../../img/background/bg-pattern-2.png");
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    @include flex(center, flex-start);
+    align-content: flex-start;
+    @media (max-width: $media-md) {
+      flex-wrap: wrap;
+    }
+    flex-wrap: wrap;
+
+  }
+
+  &__description-box {
+    min-width: 250px;
+    flex: 1 1 50%;
+  }
+}

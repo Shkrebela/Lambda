@@ -1,13 +1,30 @@
-//.footer {
-//  background-color: #202020;
-//  padding: 13px 15px;
-//  @include flex(center, center);
-//
-//  &__container {
-//    @include flex(space-between, center);
-//    flex-wrap: wrap;
-//    @media (max-width: $media-tablet) {
-//      @include flex(space-around, center);
-//    }
-//  }
-//}
+.footer {
+  background-color: #191919;
+  padding: 60px 15px 10px;
+
+  &__container {
+    @include flex(space-around, flex-start);
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    max-width: 260px;
+    width: 100%;
+    min-width: 180px;
+    flex: 1 1 180px;
+    margin-bottom: 50px;
+
+    //@media (max-width: $media-md) {
+    //  min-width: 350px;
+    //  flex: 1 1 260px;
+    //}
+    //@media (max-width: 370px) {
+    //  min-width: 180px;
+    //  flex: 1 1 180px;
+    //}
+  }
+
+  &__description {
+    margin-bottom: 25px;
+  }
+}

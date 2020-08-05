@@ -1,14 +1,15 @@
 .description {
-  margin: 0 auto 50px;
+  $this: &;
+  margin: 0 auto 45px;
   text-align: center;
-  padding: 15px;
+  //padding: 15px;
 
   &__title {
     color: $primary-color;
     //font-family: $font-family--secondary;
     //font-size: rem(36px);
     //font-weight: 400;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
   }
 
   &__text {
@@ -16,5 +17,55 @@
     max-width: 410px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+    line-height: 24px;
+
+    &--wide {
+      font: $font-secondary;
+      font-size: rem(25px);
+      max-width: 620px;
+      line-height: rem(45px);
+    }
+
+    &--cited {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        width: 32px;
+        height: 25px;
+        background: no-repeat url("./../../img/other/quote.svg");
+        opacity: 0.5;
+      }
+    }
   }
+
+  &--white {
+    #{$this}__title {
+      color: white;
+    }
+
+    #{$this}__text {
+      color: white;
+    }
+  }
+
+  &__highlight {
+    font-weight: 700;
+    color: white;
+  }
+
+  //&--small {
+  //  #{$this}__title {
+  //    color: white;
+  //  }
+  //
+  //  #{$this}__text {
+  //    color: white;
+  //  }
+  //}
 }

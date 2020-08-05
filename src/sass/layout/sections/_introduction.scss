@@ -4,7 +4,6 @@
   background-size: cover;
   position: relative;
 
-
   &::after {
     content: "";
     position: absolute;
@@ -45,6 +44,4 @@
     margin: 0 auto;
     display: block;
   }
-
-
 }

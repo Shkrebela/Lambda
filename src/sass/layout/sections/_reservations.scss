@@ -1,0 +1,52 @@
+.reservations {
+  box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.05);
+  background-image: linear-gradient(-13deg, rgba(12, 52, 53, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background: url("./../../../img/background/bg-pattern-1.png");
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    @include flex(space-around, center);
+    flex-wrap: wrap;
+  }
+
+  &__description-box {
+    max-width: 500px;
+    min-width: 250px;
+    flex: 1 1 400px;
+    padding: 10px;
+  }
+
+  &__img-box {
+    @include flex(space-around, center);
+    max-width: 650px;
+    min-width: 300px;
+    flex: 1 1 550px;
+    margin: 0 auto 30px;
+    padding: 0 30px;
+  }
+
+  &__img {
+    max-width: 270px;
+    width: 100%;
+    min-width: 100px;
+    flex: 1 1 240px;
+    margin: 0 30px 15px 0;
+    display: block;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

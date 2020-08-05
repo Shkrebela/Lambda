@@ -1,0 +1,42 @@
+.dish {
+  max-width: 455px;
+  width: 100%;
+  margin: 0 auto 25px;
+  padding: 10px 10px 0 10px;
+
+  &--spacial{
+    border: 1px solid $menu-color;
+    position: relative;
+    &::after {
+      content: "Special";
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: white;
+      text-align: center;
+      padding: 3px 16px;
+      font-size: rem(14px);
+      transform: translateY(-100%);
+      background-color: $menu-color;
+    }
+  }
+
+  &__item {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    color: $menu-color;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $menu-color;
+  }
+  &__title {
+    margin: 0 10px 10px 0;
+  }
+  &__price {
+    font: $font-secondary;
+    font-size: rem(21px);
+    color: $menu-color;
+  }
+  &__text {
+    margin-bottom: 10px;
+  }
+}

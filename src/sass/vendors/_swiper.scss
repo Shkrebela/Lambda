@@ -24,18 +24,28 @@
   align-items: center;
 }
 
-//.swiper-button-next,
-//.swiper-button-prev {
-//
-//  &--primary-slider {
-//    }
-//
-//.swiper-pagination {
-//
-//    .swiper-pagination-bullet {
-//    }
-//
-//    .swiper-pagination-bullet-active {
-//    }
-//  }
-//}
+.swiper-pagination {
+  @include flex(center, center);
+
+  .swiper-pagination-bullet {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    @include flex(center, center);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: transparentize(white, 0.5);
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+
+    &::after {
+      background-color: transparentize($primary-color, 0.5);
+    }
+  }
+}

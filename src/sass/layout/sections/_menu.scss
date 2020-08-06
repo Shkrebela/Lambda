@@ -19,11 +19,7 @@
     z-index: 1;
     @include flex(center, flex-start);
     align-content: flex-start;
-    @media (max-width: $media-md) {
-      flex-wrap: wrap;
-    }
     flex-wrap: wrap;
-
   }
 
   &__description-box {

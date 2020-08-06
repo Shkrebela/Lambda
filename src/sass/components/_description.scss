@@ -2,13 +2,10 @@
   $this: &;
   margin: 0 auto 45px;
   text-align: center;
-  //padding: 15px;
+  padding: 20px 40px;
 
   &__title {
     color: $primary-color;
-    //font-family: $font-family--secondary;
-    //font-size: rem(36px);
-    //font-weight: 400;
     margin: 0 0 20px;
   }
 
@@ -58,14 +55,4 @@
     font-weight: 700;
     color: white;
   }
-
-  //&--small {
-  //  #{$this}__title {
-  //    color: white;
-  //  }
-  //
-  //  #{$this}__text {
-  //    color: white;
-  //  }
-  //}
 }

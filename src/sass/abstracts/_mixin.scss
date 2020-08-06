@@ -4,12 +4,6 @@
   align-items: $column;
 }
 
-@mixin position-order($position, $order) {
-  & div:nth-child(#{$position}) {
-    order: $order;
-  }
-}
-
 @mixin media($parameter, $value-1, $value-2, $value-3, $value-4) {
   @media (max-width: $media-xl) {
     #{$parameter}: $value-1
@@ -23,8 +17,4 @@
   @media (max-width: $media-sm) {
     #{$parameter}: $value-4
   }
-}
-
-%pseudo-elements {
-
 }

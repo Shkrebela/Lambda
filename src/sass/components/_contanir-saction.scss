@@ -4,40 +4,14 @@
   margin: 0 auto;
 }
 
-$main-side-padding: 15px;
+.main {
+  overflow: hidden;
+}
 
 .section {
+  $main-side-padding: 15px;
   padding: 70px $main-side-padding;
   @media (max-width: $media-sm) {
     padding: 40px $main-side-padding;
   }
-  //@include media(padding, 70px, 60px, 50px, 40px);
 }
-  //@media (max-width: $media-sm) {
-  //  padding-top: 50px
-  //}
-  //@media (min-width: $media-md) {
-  //  padding-top: 70px
-  //}
-  //@media (max-width: $media-lg) {
-  //  padding-top: 80px
-  //}
-  //@media (max-width: $media-xl) {
-  //  padding-top: 100px
-  //}
-  //&--side-non {
-  //  padding: 140px 0 0;
-  //}
-  //
-  //@media (max-width: $media-PC1) {
-  //  padding: 90px $main-padding;
-  //  &--side-non {
-  //    padding: 90px 0 0;
-  //  }
-  //}
-  //@media (max-width: $media-netbook) {
-  //  padding: 70px $main-padding;
-  //  &--side-non {
-  //    padding: 70px 0 0;
-  //  }
-  //}

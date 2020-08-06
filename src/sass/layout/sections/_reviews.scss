@@ -1,5 +1,5 @@
 .reviews {
-  background: fixed bottom / cover no-repeat  url("./../../../img/background/bg-reviews.jpg");
+  background: fixed bottom / cover no-repeat url("./../../../img/background/bg-reviews.jpg");
 
   &__container {
     @include flex(center, center);
@@ -9,20 +9,21 @@
   }
 
   &__description-box {
+    max-width: 770px;
+    width: 100%;
     flex: 0 1 770px;
     background-color: transparentize(black, 0.4);
-    padding: 80px 80px 60px;
+    padding: 60px 40px 40px;
     @media (max-width: $media-md) {
-      padding: 40px 40px 20px;
+      padding: 20px 0 0;
     }
   }
 
   &__sign {
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0;
     font: $font-fourth;
     color: white;
     font-size: rem(18px);
-    margin-top: 30px;
   }
 }

@@ -11,16 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap"
           rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/solid.css"
-          integrity="sha384-wG7JbYjXVhle8f17qIp6KJaO/5PsPzOrT76RgvdRGLHj0yXZZ3jg98yb0GNRv1+M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/fontawesome.css"
-          integrity="sha384-O6duc3QftgMWW3awKiGYswymy288kVFZgGWC/4YCl48Y0codWJRgs8DA0N4dX/zx" crossorigin="anonymous">
 </head>
 <body class="body">
 <header class="main-header">
     <div class="main-header__container container">
         <div class="main-header__logo-box">
-            <a class="logo" href="#">
+            <a class="logo" href="./index.html">
                 <svg class="logo__img">
                     <use xlink:href="./img/spritemap.svg#sprite-logo"></use>
                 </svg>
@@ -28,12 +24,12 @@
         </div>
         <div class="main-header__menu-box">
             <nav class="main-header__menu">
-                <a class="main-header__link" href="#">Home</a>
-                <a class="main-header__link" href="#">About</a>
-                <a class="main-header__link" href="#">Ingredients</a>
-                <a class="main-header__link" href="#">Menu</a>
-                <a class="main-header__link" href="#">Reviews</a>
-                <a class="main-header__link" href="#">Reservations</a>
+                <a class="main-header__link" href="./index.html">Home</a>
+                <a class="main-header__link" href="#introduction">About</a>
+                <a class="main-header__link" href="#ingredients">Ingredients</a>
+                <a class="main-header__link" href="#menu">Menu</a>
+                <a class="main-header__link" href="#reviews">Reviews</a>
+                <a class="main-header__link" href="#reservations">Reservations</a>
             </nav>
             <div class="menu-toggle" id="menu-toggle">
                 <span class="menu-toggle__line"></span>
@@ -60,8 +56,8 @@
         </div>
     </div>
 </header>
-<main>
-    <section class="section primary">
+<main class="main">
+    <section class="section primary" id="primary">
         <div class="primary__container container">
             <h2 class="primary__title">The right ingredients for the right food</h2>
             <svg class="divider">
@@ -73,7 +69,7 @@
             </div>
         </div>
     </section>
-    <section class="section introduction">
+    <section class="section introduction" id="introduction">
         <div class="introduction__container container">
             <div class="introduction__description-box">
                 <div class="description">
@@ -98,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section class="section ingredients">
+    <section class="section ingredients" id="ingredients">
         <div class="ingredients__container container">
             <div class="ingredients__description-box">
                 <div class="description description--white">
@@ -120,7 +116,7 @@
             </div>
         </div>
     </section>
-    <section class="section menu">
+    <section class="section menu" id="menu">
         <div class="menu__container container">
             <div class="menu__description-box">
                 <div class="menu-sector">
@@ -265,25 +261,67 @@
 
         </div>
     </section>
-    <section class="section reviews">
+    <section class="section reviews" id="reviews">
         <div class="reviews__container container">
             <div class="reviews__description-box">
-                <div class="description description--white">
-                    <h3 class="description__title">Guest Reviews</h3>
-                    <svg class="divider">
-                        <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
-                    </svg>
-                    <p class="description__text description__text--cited  description__text--wide">
-                        If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers
-                        coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins,
-                        and gourmet coffees make us hard to resist! Stop in today and check us out!
-                    </p>
-                    <span class="reviews__sign">- food inc, New York</span>
+                <div class="reviews__swiper-container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="description description--white">
+                                <h3 class="description__title">Guest Reviews</h3>
+                                <svg class="divider">
+                                    <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
+                                </svg>
+                                <p class="description__text description__text--cited  description__text--wide">
+                                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
+                                    customers
+                                    coming back for more. Perfect materials and freshly baked food, delicious Lambda
+                                    cakes, muffins,
+                                    and gourmet coffees make us hard to resist! Stop in today and check us out!
+                                </p>
+                                <span class="reviews__sign">- food inc, New York</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="description description--white">
+                                <h3 class="description__title">Guest Reviews</h3>
+                                <svg class="divider">
+                                    <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
+                                </svg>
+                                <p class="description__text description__text--cited  description__text--wide">
+                                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
+                                    customers
+                                    coming back for more. Perfect materials and freshly baked food, delicious Lambda
+                                    cakes, muffins,
+                                    and gourmet coffees make us hard to resist! Stop in today and check us out!
+                                </p>
+                                <span class="reviews__sign">- food inc, New York</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="description description--white">
+                                <h3 class="description__title">Guest Reviews</h3>
+                                <svg class="divider">
+                                    <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
+                                </svg>
+                                <p class="description__text description__text--cited  description__text--wide">
+                                    If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our
+                                    customers
+                                    coming back for more. Perfect materials and freshly baked food, delicious Lambda
+                                    cakes, muffins,
+                                    and gourmet coffees make us hard to resist! Stop in today and check us out!
+                                </p>
+                                <span class="reviews__sign">- food inc, New York</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination--down">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section reservations">
+    <section class="section reservations" id="reservations">
         <div class="reservations__container container">
             <div class="reservations__img-box">
                 <img class="reservations__img" src="./img/other/image-1.jpg" alt="">
@@ -426,7 +464,7 @@
     </div>
 </footer>
 <aside class="arrow-up arrow-up--flow">
-    <a class="arrow-up__link" href="#">
+    <a class="arrow-up__link" href="#primary">
         <svg class="arrow-up__icon">
             <use xlink:href="./img/spritemap.svg#sprite-angle"></use>
         </svg>

@@ -12,6 +12,8 @@
 
   &--active-menu-toggle {
     #{$this}__line {
+      width: 0;
+      background-color: $primary-color;
 
       &::before {
         top: 0;
@@ -24,9 +26,6 @@
         left: 0;
         transform: rotate(45deg);
       }
-
-      width: 0;
-      background-color: $primary-color;
     }
   }
 
@@ -72,6 +71,7 @@
   color: white;
   cursor: pointer;
   transition: .3s ease-in-out;
+
   &:hover {
     background-color: transparentize(black, 0.3);
     border: 1px solid transparentize(black, 0.3);
@@ -93,13 +93,13 @@
   }
 }
 
-
 .arrow-up {
   width: 53px;
   height: 53px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   background-color: $primary-color;
   border-radius: 100%;
+  z-index: 10;
   transition: .3s ease-in-out;
 
   &:hover {

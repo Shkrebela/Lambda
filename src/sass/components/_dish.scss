@@ -4,9 +4,10 @@
   margin: 0 auto 25px;
   padding: 10px 10px 0 10px;
 
-  &--spacial{
+  &--spacial {
     border: 1px solid $menu-color;
     position: relative;
+
     &::after {
       content: "Special";
       position: absolute;
@@ -28,14 +29,17 @@
     margin-bottom: 10px;
     border-bottom: 1px solid $menu-color;
   }
+
   &__title {
     margin: 0 10px 10px 0;
   }
+
   &__price {
     font: $font-secondary;
     font-size: rem(21px);
     color: $menu-color;
   }
+
   &__text {
     margin-bottom: 10px;
   }

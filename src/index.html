@@ -124,7 +124,7 @@
                     <svg class="divider divider--primary-color">
                         <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
                     </svg>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Tzatsiki</h4>
                             <span class="dish__price">$3.99</span>
@@ -133,7 +133,7 @@
                             Refreshing traditional cucumber and garlic yoghurt dip.
                         </p>
                     </div>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Aubergine Salad</h4>
                             <span class="dish__price">$5.50</span>
@@ -142,7 +142,7 @@
                             Pureed eggplant, garlic, green pepper and tomato dip.
                         </p>
                     </div>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Aubergine Salad</h4>
                             <span class="dish__price">$5.25</span>
@@ -159,7 +159,7 @@
                     <svg class="divider divider--primary-color">
                         <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
                     </svg>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Haloumi</h4>
                             <span class="dish__price">$3.99</span>
@@ -168,7 +168,7 @@
                             Refreshing traditional cucumber and garlic yoghurt dip.
                         </p>
                     </div>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Spinach Pie</h4>
                             <span class="dish__price">$5.50</span>
@@ -185,7 +185,7 @@
                     <svg class="divider divider--primary-color">
                         <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
                     </svg>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Olive Special</h4>
                             <span class="dish__price">$5.99</span>
@@ -203,7 +203,7 @@
                             Pureed eggplant, garlic, green pepper and tomato dip.
                         </p>
                     </div>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Gusto Salad</h4>
                             <span class="dish__price">$5.25</span>
@@ -220,7 +220,7 @@
                     <svg class="divider divider--primary-color">
                         <use xlink:href="./img/spritemap.svg#sprite-divider-2"></use>
                     </svg>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Cornish Mackerel</h4>
                             <span class="dish__price">$5.99</span>
@@ -238,7 +238,7 @@
                             Pureed eggplant, garlic, green pepper and tomato dip.
                         </p>
                     </div>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Fried Chicken</h4>
                             <span class="dish__price">$5.25</span>
@@ -247,7 +247,7 @@
                             Pureed eggplant, garlic, green pepper and tomato dip.
                         </p>
                     </div>
-                    <div class="dish dish">
+                    <div class="dish">
                         <div class="dish__item">
                             <h4 class="dish__title">Pastitsio</h4>
                             <span class="dish__price">$5.99</span>
@@ -342,7 +342,7 @@
                         check us out! Perfect materials and freshly baked food.
                     </p>
                 </div>
-                <div class="form">
+                <form class="form">
                     <div class="form__box">
                         <label class="form__label" for="name">Name</label>
                         <input class="form__input" id="name" type="text" placeholder="your name *" required>
@@ -353,7 +353,7 @@
                     </div>
                     <div class="form__box">
                         <label class="form__label" for="date">Date</label>
-                        <input class="form__input" id="date" type="date" placeholder="date *" required>
+                        <input class="form__input" id="date" type="date" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" placeholder="mm/dd/yyyy" required>
                     </div>
                     <div class="form__box">
                         <label class="form__label" for="number">Party number</label>
@@ -367,8 +367,8 @@
                             <option value="5<">More than six</option>
                         </select>
                     </div>
-                    <button class="button button--color">Book now!</button>
-                </div>
+                    <button type="submit" class="button button--color">Book now!</button>
+                </form>
             </div>
         </div>
     </section>
@@ -463,13 +463,11 @@
         </div>
     </div>
 </footer>
-<aside class="arrow-up arrow-up--flow">
-    <a class="arrow-up__link" href="#primary">
-        <svg class="arrow-up__icon">
-            <use xlink:href="./img/spritemap.svg#sprite-angle"></use>
-        </svg>
-    </a>
-</aside>
+<a class="arrow-up" href="#top">
+    <svg class="arrow-up__icon">
+        <use xlink:href="./img/spritemap.svg#sprite-angle"></use>
+    </svg>
+</a>
 <script src="./js/index.js"></script>
 </body>
 </html>

@@ -94,6 +94,7 @@
 }
 
 .arrow-up {
+  @include flex(center, center);
   width: 53px;
   height: 53px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
@@ -101,30 +102,21 @@
   border-radius: 100%;
   z-index: 10;
   transition: .3s ease-in-out;
+  position: fixed;
+  right: 53px;
+  bottom: 60px;
+  @media (max-width: $media-md) {
+    right: 33px;
+    bottom: 30px;
+  }
 
   &:hover {
     background-color: $primary-color--hover;
-  }
-
-  &__link {
-    @include flex(center, center);
-    width: 100%;
-    height: 100%;
   }
 
   &__icon {
     width: 17px;
     height: 25px;
     fill: white;
-  }
-
-  &--flow {
-    position: fixed;
-    right: 53px;
-    bottom: 60px;
-    @media (max-width: $media-md) {
-      right: 33px;
-      bottom: 30px;
-    }
   }
 }

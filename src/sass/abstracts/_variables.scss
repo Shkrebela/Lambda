@@ -5,10 +5,10 @@ $font-family--third: 'Gentium Book Basic', serif;
 $font-family--fourth: 'Open Sans', sans-serif;
 $font-size-base: 16px;
 
-$font-primary: 400 $font-size-base $font-family--primary;
-$font-secondary: 400 $font-size-base $font-family--secondary;
-$font-third: 700 $font-size-base $font-family--third;
-$font-fourth: 400 $font-size-base $font-family--fourth;
+$font-primary: 400 1rem $font-family--primary;
+$font-secondary: 400 1rem $font-family--secondary;
+$font-third: 700 1rem $font-family--third;
+$font-fourth: 400 1rem $font-family--fourth;
 
 //media points
 $media-sm: 540px;

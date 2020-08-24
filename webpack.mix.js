@@ -3,11 +3,11 @@ const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 mix.config.publicPath = 'dist';
-mix.config.sourcemaps = 'true';
-mix.js('src/js/main.js', 'dist/js/index.js')
-    .sass('src/sass/main.scss', 'dist/css')
-    .copyDirectory('src/img/background', 'dist/img/background')
-    .copyDirectory('src/img/other', 'dist/img/other')
+mix.config.resourceRoot = './';
+mix.config.fileLoaderDirs = {images: 'img', fonts: 'font'};
+mix.sourceMaps()
+    .js('src/js/main.js', 'dist/js/index.js')
+    .sass('src/sass/main.scss', 'dist/')
 
 mix.webpackConfig({
     plugins: [
@@ -17,8 +17,9 @@ mix.webpackConfig({
             }
         }),
         new HtmlWebpackPlugin({
-            title: 'Custom template',
-            template: './src/index.html'
+            template: 'src/index.html',
+            filename: './index.html',
+            inject: false,
         })
     ]
 })

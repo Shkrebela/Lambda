@@ -40,4 +40,12 @@ if (window.matchMedia("(max-width: 960px)").matches) {
     });
 }
 
+let arrowUp = document.querySelector('.arrow-up');
 
+window.addEventListener('scroll', function () {
+    if (pageYOffset > 300) {
+        arrowUp.classList.remove("arrow-up--none")
+    } else {
+        arrowUp.classList.add("arrow-up--none")
+    }
+});

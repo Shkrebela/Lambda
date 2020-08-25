@@ -23,10 +23,15 @@ Clone the project from the repository to the folder on your device.
 ```
 git clone https://github.com/Shkrebela/Lambda.git
 ```
+**2rd Step**<br> 
+Go to the folder
+```
+cd Lambda/
+```
 **3rd Step**<br> 
 Install all npm packages and plugins which contains in the package.json 
 ```
-cd Lambda/
+npm install
 ```
 **4th Step**<br>
 Launch the Laravel Mix for:<br> 

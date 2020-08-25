@@ -1,7 +1,7 @@
 # Landing Lambda
 The project was created for the portfolio (non-commercial purposes).<br> 
 Find the template used the [link](https://www.oxygenna.com/freebies/free-one-page-psd-template) <br> 
-Also you can visit this [page](https://shkrebela.github.io/Lambda/) to view the site on GitHub Page 
+Also, you can visit this [page](https://shkrebela.github.io/Lambda/) for reviewing the site on GitHub Page 
 
 ![](https://github.com/Shkrebela/TEST/blob/master/ezgif.com-optimize.gif?raw=true)
 
